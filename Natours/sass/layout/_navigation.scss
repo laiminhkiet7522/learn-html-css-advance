@@ -15,6 +15,16 @@
     text-align: center;
     cursor: pointer;
     z-index: 2000;
+
+    @include responsive(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include responsive(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -30,7 +40,16 @@
     right: 6.5rem;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     z-index: 1000;
-    // transform: scale(80);
+
+    @include responsive(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
+    @include responsive(phone) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__nav {
@@ -137,16 +156,16 @@
     top: 1rem;
   }
 
-  &__checkbox:checked + &__button &__icon{
+  &__checkbox:checked + &__button &__icon {
     background-color: transparent;
   }
 
-  &__checkbox:checked + &__button &__icon::before{
+  &__checkbox:checked + &__button &__icon::before {
     transform: rotate(135deg);
     top: 0;
   }
 
-  &__checkbox:checked + &__button &__icon::after{
+  &__checkbox:checked + &__button &__icon::after {
     transform: rotate(-135deg);
     top: 0;
   }
