@@ -325,7 +325,10 @@
     </main>
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+            <picture class="footer__logo">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo">
+            </picture>
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -358,7 +361,8 @@
             <div class="popup__right">
                 <a href="#section-tours" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
-                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
+                    booking</h3>
                 <p class="popup__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna
                     aliqua. Fermentum leo vel orci porta non pulvinar neque. Sit amet justo donec enim. Tempor commodo
@@ -372,7 +376,7 @@
                     dui faucibus in. Nullam vehicula ipsum a arcu cursus. Tristique sollicitudin nibh sit amet commodo
                     nulla facilisi nullam
                     vehicula. Viverra nam libero justo laoreet sit amet.</p>
-                    <a href="#" class="btn btn--green">Book now</a>
+                <a href="#" class="btn btn--green">Book now</a>
             </div>
         </div>
     </div>
